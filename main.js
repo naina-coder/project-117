@@ -42,6 +42,7 @@ function draw()
             line(pmouseX, pmouseY, mouseX, mouseY);
         }
 
+        check_sketch();
 
     if(drawn_sketch == Sketch)
 {
@@ -50,7 +51,6 @@ function draw()
         score++;
         document.getElementById('score').innerHTML = "score: " +score;
 
-        check_sketch();
         
 }
 
@@ -109,7 +109,7 @@ console.log(random_number);
 
 Sketch = quick_draw_data_set[random_number];
 
-document.getElementById("sketch to be drawn").innerHTML = "Sketch To Be Drawn:  "+Sketch;
+document.getElementById("sketch_name").innerHTML = "Sketch To Be Drawn:  "+Sketch;
 
 }
 
