@@ -3,6 +3,9 @@ quick_draw_data_set=["aircraft carrier","airplane","alarm clock","ambulance","an
 random_number = Math.floor((Math.random()*quick_draw_data_set.length)+1);
 console.log(random_number);
 
+
+
+
 Sketch = quick_draw_data_set[random_number];
 
 document.getElementById("sketch_name").innerHTML = "Sketch To Be Drawn:  "+Sketch;
@@ -40,7 +43,7 @@ function draw()
         }
 
 
-    if(drawn_sketch == sketch)
+    if(drawn_sketch == Sketch)
 {
         answer_holder = "set";
 
